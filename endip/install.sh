@@ -213,7 +213,7 @@ v2ray() {
 	PublicKey=$(awk -F' = ' '/PublicKey/{print $2}' wgcf-profile.conf)
 	MTU=$(awk -F' = ' '/MTU/{print $2}' wgcf-profile.conf)
 
-	WireguardURL="wireguard://$(urlencode "$PrivateKey")@$Endip_v46?address=$(urlencode "$Address")&publickey=$(urlencode "$PublicKey")&mtu=$(urlencode "$MTU")#Peyman_WireGuard"
+	WireguardURL="wireguard://$(urlencode "$PrivateKey")@$Endip_v46?address=$(urlencode "$Address")&publickey=$(urlencode "$PublicKey")&mtu=$(urlencode "$MTU")#@FergalVpnMod"
 
 	echo $WireguardURL
 }
@@ -509,37 +509,37 @@ cloner() {
 
 #Menu
 clear
-echo -e "${cyan}By --> Peyman * Github.com/Ptechgithub * ${rest}"
+echo -e "${cyan}By AghaHosien * Telegram:@V2Fergal * ${rest}"
 echo ""
-echo -e "${purple}**********************${rest}"
-echo -e "${purple}*  ${green}Endpoint Scanner ${purple} *${rest}"
-echo -e "${purple}*  ${green}wire-g installer ${purple} *${rest}"
-echo -e "${purple}*  ${green}License cloner${purple}    *${rest}"
-echo -e "${purple}**********************${rest}"
-echo -e "${purple}[1] ${cyan}Preferred${green} IPV4${purple}   * ${rest}"
+echo -e "${Green}**********************${rest}"
+echo -e "${Green}*  ${yellow}Endpoint Scanner ${Green} *${rest}"
+echo -e "${Green}*  ${yellow}wire-g installer ${Green} *${rest}"
+echo -e "${Green}*  ${yellow}License cloner${Green}    *${rest}"
+echo -e "${Green}**********************${rest}"
+echo -e "${purple}[1] ${cyan}Create${green} IPV4${purple}   * ${rest}"
 echo -e "${purple}                     *${rest}"
-echo -e "${purple}[2] ${cyan}Preferred${green} IPV6${purple}   * ${rest}"
+echo -e "${purple}[2] ${cyan}Create${green} IPV6${purple}   * ${rest}"
 echo -e "${purple}                     *${rest}"
-echo -e "${purple}[3] ${cyan}Free Config ${green}Wgcf${purple} *${rest}"
+echo -e "${purple}[3] ${cyan}Config Gen${green}Wg${purple} *${rest}"
 echo -e "${purple}                     *${rest}"
 echo -e "${purple}[4] ${cyan}Install ${green}wire-g${purple}   *${rest}"
 echo -e "${purple}                     *${rest}"
-echo -e "${purple}[5] ${cyan}License Cloner${purple}   *${rest}"
+echo -e "${purple}[5] ${cyan}License Gen${purple}   *${rest}"
 echo -e "${purple}                     *${rest}"
 echo -e "${purple}[${red}0${purple}] Exit             *${rest}"
 echo -e "${purple}**********************${rest}"
-echo -en "${cyan}Enter your choice: ${rest}"
+echo -en "${cyan}Enter your Choice: ${rest}"
 read -r choice
 case "$choice" in
 1)
-	echo -e "${purple}*********************${rest}"
+	echo -e "${Green}*********************${rest}"
 	cfwarpIP
 	endipv4
 	endipresult
 	Endip_v4
 	;;
 2)
-	echo -e "${purple}*********************${rest}"
+	echo -e "${Green}*********************${rest}"
 	cfwarpIP
 	endipv6
 	endipresult
